@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizemli Gece - İnteraktif Hikâye</title>
+    <!-- Sinematik bir atmosfer için Google Fonts fontlarını içe aktarıyoruz -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Stil dosyamızı bağlıyoruz -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Arka plan atmosfer efekti -->
+    <div class="vignette"></div>
+
+    <!-- Ana Oyun Kutusu -->
+    <main class="game-card">
+        <header class="header">
+            <h1 class="title">Gizemli Gece</h1>
+            <p class="subtitle">Karanlıkta yapılan her seçimin bir sonucu vardır...</p>
+        </header>
+
+        <!-- Hikaye Metninin Gösterileceği Alan -->
+        <section class="story-section">
+            <p id="story-text" class="story-text">
+                Karanlık ve tekinsiz bir gecede bilinmeze adım atmaya hazır mısın?
+            </p>
+        </section>
+
+        <!-- Seçenek Butonlarının Ekleneceği Alan -->
+        <section id="choices-container" class="choices-section">
+            <!-- Butonlar JavaScript tarafından dinamik olarak buraya yerleştirilecek -->
+        </section>
+
+        <!-- Başa Dön Butonu (Oyun başladığında görünür olacak) -->
+        <footer class="footer">
+            <button id="restart-btn" class="btn btn-restart hidden">🔄 Başa Dön</button>
+        </footer>
+    </main>
+
+    <!-- Mantık ve etkileşim dosyamızı bağlıyoruz -->
+    <script src="script.js"></script>
+</body>
+</html>
